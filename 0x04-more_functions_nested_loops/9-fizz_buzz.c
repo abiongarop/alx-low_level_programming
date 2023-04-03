@@ -1,10 +1,15 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * main - prints the FizzBuzz program
+ * prints Fizz for multiples of three
+ * prints Buzz for multiples of five
  * Return: 0 Always
  *
  */
+
 int main(void)
 {
 	int n;
@@ -15,26 +20,24 @@ int main(void)
 	{
 	printf("FizzBuzz");
 	}
-	else if (n % 3 == 0)
+	else if (n % 3 == 0 && n % 5 != 0)
 	{
 	printf("Fizz");
 	}
-	else if (n % 5 == 0)
+	else if (n % 5 == 0 && n % 3 != 0)
 	{
 	printf("Buzz");
 	}
-	else
+	else if (n == 1)
 	{
 	printf("%d", n);
 	}
-	if (n != 100)
+	else
 	{
-	printf(" ");
+	printf(" %d", n);
 	}
 	}
-	{
-	printf('\n');
-	}
+	putchar('\n');
+
 	return (0);
 }
-
