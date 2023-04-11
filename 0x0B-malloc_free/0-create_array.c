@@ -8,6 +8,7 @@
  * @size: size of char
  * Description: creates an array of chars, and initializes it with a specific char.
  * Return: pointer to the array, or NULL if it fails
+ */
 
 char *create_array(unsigned int size, char c) {
     if (size == 0) {
