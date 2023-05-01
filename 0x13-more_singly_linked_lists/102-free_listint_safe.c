@@ -8,7 +8,7 @@
  *
  * Return: the size of the list that was free’d
  */
-size_t free_listint_safe(listint_t **h);
+size_t free_listint_safe(listint_t **h)
 {
 	listint_t *current = *h, *next_node = NULL;
 	size_t count = 0;
